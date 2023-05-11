@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DropShop</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<section class="header">
+		<a href="#"><img src="./images/logo.png" class="logo-img"></a>
+		<ul class="navbar" id="navbar">
+			<li><a href="#" class="active">Home</a></li>
+			<li id="shop"><a href="#">Shop</a>
+				<div class="shop-list">
+					<a href="">Electronics</a>
+					<a href="">Kitchen</a>
+					<a href="">Mome Decor</a>
+				</div>
+
+			</li>
+
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contact US</a></li>
+			<li id="mob-cart-o"><a href="#"><i class="fa-solid fa-cart-shopping" style="font-size: 18px"></i></a></li>
+
+			<li id="close"><i class="fa-solid fa-xmark" style="font-size: 24px" id="close"></i></li>
+		</ul>
+		<div class="mob-side">
+			<a href="#"><i class="fa-solid fa-cart-shopping" style="font-size: 22px"></i></a>
+			<span class="ham"><i class="fa-solid fa-bars" style="font-size: 24px; color: #000;" id="bars"></i></span>
+		</div>
+		
+	</section>
+
+	<section class="hero">
+		<h3>Trade-in-offer</h3>
+		<h1>Super value deals</h1>
+		<h2>On all products</h2>
+		<p class="mob-p">Save more with coupons & upto 70% off</p>
+	</section>
+
+	<script type="text/javascript">
+
+			const bar = document.getElementById("bars");
+			const close = document.getElementById("close");
+			const nav = document.getElementById("navbar")
+
+			if(bar){
+				bar.addEventListener('click', () => {
+					nav.classList.add('main');
+				})
+			}
+
+			if(close){
+				close.addEventListener('click', () => {
+					nav.classList.remove('main');
+				})
+			}
+		
+
+	</script>
+</body>
+</html>
